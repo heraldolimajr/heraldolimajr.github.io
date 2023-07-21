@@ -117,6 +117,9 @@ ul li {
 #header .logo {
 	float: left;
 }
+#header .logo img{
+	width: 200px;
+}
 #header.fixed {
 	background-color: rgba(255, 255, 255, 1);
 }
