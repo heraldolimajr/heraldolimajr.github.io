@@ -110,7 +110,7 @@ h2 span {
 
   display: grid;
   grid-template-columns:
-    minmax(130px, 50%)
+    minmax(130px, 42%)
     minmax(0, 58%);
 
   gap: clamp(18px, 2.3vw, 36px);
