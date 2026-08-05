@@ -18,7 +18,7 @@
       <div class="intro">
         <p class="eyebrow">Apresentação</p>
         <h1>Professor Me.<br><em>Heraldo Gonçalves</em><br>Lima Junior</h1>
-        <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p class="bio">Professor e pesquisador na área de Informática na Educação, com atuação na interface entre inteligência artificial,ontologias, avaliação da aprendizagem e educação baseada em competências. Doutorando em Informática pelo Centro de Informática da Universidade Federal da Paraíba (UFPB), desenvolve pesquisa voltada à avaliação de competências em ambientes colaborativos de Engenharia de Software, investigando o uso de abordagens computacionais baseadas em ontologias para apoiar processos avaliativos, mensurar contribuições individuais e coletivas e favorecer práticas de ensino de precisão. É Mestre em Educação Profissional e Tecnológica pelo Instituto Federal do Sertão Pernambucano (IFSertãoPE), com trajetória acadêmico-profissional marcada pelo compromisso com a inovação pedagógica, a integração de metodologias ativas e o uso de tecnologias digitais no ensino de computação. Atua como membro pesquisador do GEPPFOR Grupo de Estudos e Pesquisas em Políticas Públicas e Formação de Profissionais da Educação, da Universidade Federal de Viçosa (UFV), contribuindo para a linha de Metodologias Ativas e Alfabetização Tecnológica. É professor efetivo de Informática no Instituto Federal do Sertão Pernambucano, Campus Salgueiro, atuando nos cursos de Tecnologia em Sistemas para Internet e Técnico em Informática, articulando prática docente, pesquisa aplicada e desenvolvimento de soluções educacionais orientadas por dados. </p>
         <a class="cta" href="mailto:heraldo.exemplo@gmail.com">Entre em contato <span aria-hidden="true">↗</span></a>
       </div>
     </section>
@@ -30,13 +30,13 @@
   </div></main>
   <script>
     const profiles = [
-      ['GitHub','@heraldo-lima','https://github.com/heraldo-lima','GH'],
-      ['Currículo Lattes','Perfil acadêmico','https://lattes.cnpq.br/0000000000000000','LT'],
-      ['ORCID','0000-0000-0000-0000','https://orcid.org/0000-0000-0000-0000','ID'],
-      ['ResearchGate','Heraldo-Lima','https://www.researchgate.net/profile/Heraldo-Lima','RG'],
-      ['Academia.edu','heraldolima','https://example.academia.edu/heraldolima','AC'],
-      ['LinkedIn','/in/heraldolima','https://www.linkedin.com/in/heraldolima','IN'],
-      ['Gmail','heraldo.exemplo@gmail.com','mailto:heraldo.exemplo@gmail.com','@']
+      ['GitHub','@heraldolimajr','https://github.com/heraldolimajr','GH'],
+      ['Currículo Lattes','Perfil acadêmico','http://lattes.cnpq.br/2480236969475924','LT'],
+      ['ORCID','0000-0001-8470-896X','https://orcid.org/0000-0001-8470-896X','ID'],
+      ['ResearchGate','Heraldo-Lima-Junior','https://www.researchgate.net/profile/Heraldo-Lima-Junior','RG'],
+      ['Academia.edu','heraldoJr','https://independent.academia.edu/HeraldoJr','AC'],
+      ['LinkedIn','/in/heraldolimajr','https://www.linkedin.com/in/heraldolimajr/','IN'],
+      ['Gmail','heraldo.junior@ifsertao-pe.edu.br','mailto:heraldo.junior@ifsertao-pe.edu.br','@']
     ];
     document.querySelector('#links').innerHTML = profiles.map((p,i) => `<a class="profile-link" href="${p[2]}" ${p[2].startsWith('mailto:') ? '' : 'target="_blank" rel="noreferrer"'}><span class="link-number">${String(i+1).padStart(2,'0')}</span><span class="link-mark" aria-hidden="true">${p[3]}</span><span class="link-copy"><strong>${p[0]}</strong><small>${p[1]}</small></span><span class="arrow" aria-hidden="true">↗</span></a>`).join('');
     document.querySelector('#year').textContent = new Date().getFullYear();
