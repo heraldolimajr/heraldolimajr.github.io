@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Cartão de visitas virtual de Heraldo Gonçalves Lima Junior.">
+  <title>Professor Me. Heraldo Gonçalves Lima Junior</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main><div class="page-shell">
+    <header class="topbar" aria-label="Cabeçalho">
+      <a class="monogram" href="#inicio" aria-label="Início">HL<span>.</span></a>
+      <span class="availability"><i aria-hidden="true"></i> Professor &amp; pesquisador</span>
+    </header>
+    <section class="hero" id="inicio">
+      <div class="portrait-wrap"><div class="portrait-frame"><img src="heraldo.jpg" alt="Retrato do Professor Heraldo Gonçalves Lima Junior"></div><span class="photo-note">Fortaleza · Brasil</span></div>
+      <div class="intro">
+        <p class="eyebrow">Apresentação</p>
+        <h1>Professor Me.<br><em>Heraldo Gonçalves</em><br>Lima Junior</h1>
+        <p class="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <a class="cta" href="mailto:heraldo.exemplo@gmail.com">Entre em contato <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+    <section class="connections" aria-labelledby="conexoes">
+      <div class="section-heading"><p class="eyebrow">Presença digital</p><h2 id="conexoes">Onde me encontrar</h2></div>
+      <div class="link-grid" id="links"></div>
+    </section>
+    <footer><span>© <span id="year"></span> Heraldo Lima</span><span>Feito com intenção e simplicidade.</span></footer>
+  </div></main>
+  <script>
+    const profiles = [
+      ['GitHub','@heraldo-lima','https://github.com/heraldo-lima','GH'],
+      ['Currículo Lattes','Perfil acadêmico','https://lattes.cnpq.br/0000000000000000','LT'],
+      ['ORCID','0000-0000-0000-0000','https://orcid.org/0000-0000-0000-0000','ID'],
+      ['ResearchGate','Heraldo-Lima','https://www.researchgate.net/profile/Heraldo-Lima','RG'],
+      ['Academia.edu','heraldolima','https://example.academia.edu/heraldolima','AC'],
+      ['LinkedIn','/in/heraldolima','https://www.linkedin.com/in/heraldolima','IN'],
+      ['Gmail','heraldo.exemplo@gmail.com','mailto:heraldo.exemplo@gmail.com','@']
+    ];
+    document.querySelector('#links').innerHTML = profiles.map((p,i) => `<a class="profile-link" href="${p[2]}" ${p[2].startsWith('mailto:') ? '' : 'target="_blank" rel="noreferrer"'}><span class="link-number">${String(i+1).padStart(2,'0')}</span><span class="link-mark" aria-hidden="true">${p[3]}</span><span class="link-copy"><strong>${p[0]}</strong><small>${p[1]}</small></span><span class="arrow" aria-hidden="true">↗</span></a>`).join('');
+    document.querySelector('#year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
