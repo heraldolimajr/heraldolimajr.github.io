@@ -94,8 +94,8 @@ h2 span {
   min-height: 0;
   display: grid;
   grid-template-columns:
-    minmax(0, 46%)
-    minmax(0, 54%);
+    minmax(0, 60%)
+    minmax(0, 40%);
 }
 
 /* Coluna esquerda */
