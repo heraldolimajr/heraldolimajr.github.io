@@ -3,43 +3,179 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Cartão de visitas virtual de Heraldo Gonçalves Lima Junior.">
+  <meta
+    name="description"
+    content="Cartão de visitas virtual de Heraldo Gonçalves Lima Junior."
+  >
   <title>Professor Me. Heraldo Gonçalves Lima Junior</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <main><div class="page-shell">
-    <header class="topbar" aria-label="Cabeçalho">
-      <a class="monogram" href="#inicio" aria-label="Início">HL<span>.</span></a>
-      <span class="availability"><i aria-hidden="true"></i> Professor &amp; pesquisador</span>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="monogram" href="#inicio" aria-label="Início">
+        HL<span>.</span>
+      </a>
+
+      <span class="role">
+        <i aria-hidden="true"></i>
+        Professor &amp; pesquisador
+      </span>
     </header>
-    <section class="hero" id="inicio">
-      <div class="portrait-wrap"><div class="portrait-frame"><img src="heraldo.jpg" alt="Retrato do Professor Heraldo Gonçalves Lima Junior"></div><span class="photo-note">João Pessoa - PB · Brasil</span></div>
-      <div class="intro">
-        <p class="eyebrow">Apresentação</p>
-        <h1>Professor Me.<br><em>Heraldo Gonçalves</em><br>Lima Junior</h1>
-        <p class="bio">Professor e pesquisador em Informática na Educação. Doutorando em Informática pela UFPB e mestre em Educação Profissional e Tecnológica pelo IFSertãoPE, pesquisa métodos computacionais para avaliar competências em ambientes colaborativos. É professor efetivo de Informática no IFSertãoPE, Campus Salgueiro, e pesquisador do GEPPFOR/UFV, integrando docência, metodologias ativas e desenvolvimento de soluções educacionais orientadas por dados.</p>
-        <a class="cta" href="mailto:heraldo.exemplo@gmail.com">Entre em contato <span aria-hidden="true">↗</span></a>
-      </div>
-    </section>
-    <section class="connections" aria-labelledby="conexoes">
-      <div class="section-heading"><p class="eyebrow">Presença digital</p><h2 id="conexoes">Onde me encontrar</h2></div>
-      <div class="link-grid" id="links"></div>
-    </section>
-    <footer><span>© <span id="year"></span> Heraldo G. Lima Junior</span></footer>
-  </div></main>
+
+    <div class="card" id="inicio">
+      <section class="identity" aria-labelledby="nome">
+        <div class="portrait">
+          <img
+            src="heraldo.jpg"
+            alt="Retrato do Professor Heraldo Gonçalves Lima Junior"
+          >
+
+          <span class="location">
+            João Pessoa — PB · Brasil
+          </span>
+        </div>
+
+        <div class="about">
+          <p class="eyebrow">Apresentação</p>
+
+          <h1 id="nome">
+            <small>Professor Me.</small>
+            Heraldo Gonçalves
+            <em>Lima Junior</em>
+          </h1>
+
+          <p class="bio">
+            Professor e pesquisador em Informática na Educação. Doutorando em
+            Informática pela UFPB e mestre em Educação Profissional e
+            Tecnológica pelo IFSertãoPE, pesquisa métodos computacionais para
+            avaliar competências em ambientes colaborativos. É professor
+            efetivo de Informática no IFSertãoPE, Campus Salgueiro, e
+            pesquisador do GEPPFOR/UFV, integrando docência, metodologias ativas
+            e desenvolvimento de soluções educacionais orientadas por dados.
+          </p>
+
+          <a
+            class="contact"
+            href="mailto:heraldo.junior@ifsertao-pe.edu.br"
+          >
+            Entre em contato
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="connections" aria-labelledby="conexoes">
+        <div class="connections-heading">
+          <p class="eyebrow">Presença digital</p>
+
+          <h2 id="conexoes">
+            Onde me encontrar<span>.</span>
+          </h2>
+
+          <p>Perfis acadêmicos, produção e contato.</p>
+        </div>
+
+        <nav
+          class="link-list"
+          id="links"
+          aria-label="Perfis e contatos"
+        ></nav>
+      </section>
+    </div>
+
+    <footer>
+      <span>
+        © <span id="year"></span> Heraldo G. Lima Junior
+      </span>
+
+      <span>
+        Conhecimento · Educação · Tecnologia
+      </span>
+    </footer>
+  </main>
+
   <script>
     const profiles = [
-      ['GitHub','@heraldolimajr','https://github.com/heraldolimajr','GH'],
-      ['Currículo Lattes','Perfil acadêmico','http://lattes.cnpq.br/2480236969475924','LT'],
-      ['ORCID','0000-0001-8470-896X','https://orcid.org/0000-0001-8470-896X','ID'],
-      ['ResearchGate','Heraldo-Lima-Junior','https://www.researchgate.net/profile/Heraldo-Lima-Junior','RG'],
-      ['Academia.edu','heraldoJr','https://independent.academia.edu/HeraldoJr','AC'],
-      ['LinkedIn','/in/heraldolimajr','https://www.linkedin.com/in/heraldolimajr/','IN'],
-      ['Gmail','heraldo.junior@ifsertao-pe.edu.br','mailto:heraldo.junior@ifsertao-pe.edu.br','@']
+      [
+        'GitHub',
+        '@heraldolimajr',
+        'https://github.com/heraldolimajr',
+        'GH'
+      ],
+      [
+        'Currículo Lattes',
+        'Perfil acadêmico',
+        'http://lattes.cnpq.br/2480236969475924',
+        'LT'
+      ],
+      [
+        'ORCID',
+        '0000-0001-8470-896X',
+        'https://orcid.org/0000-0001-8470-896X',
+        'ID'
+      ],
+      [
+        'ResearchGate',
+        'Heraldo-Lima-Junior',
+        'https://www.researchgate.net/profile/Heraldo-Lima-Junior',
+        'RG'
+      ],
+      [
+        'Academia.edu',
+        'heraldoJr',
+        'https://independent.academia.edu/HeraldoJr',
+        'AC'
+      ],
+      [
+        'LinkedIn',
+        '/in/heraldolimajr',
+        'https://www.linkedin.com/in/heraldolimajr/',
+        'IN'
+      ],
+      [
+        'E-mail',
+        'heraldo.junior@ifsertao-pe.edu.br',
+        'mailto:heraldo.junior@ifsertao-pe.edu.br',
+        '@'
+      ]
     ];
-    document.querySelector('#links').innerHTML = profiles.map((p,i) => `<a class="profile-link" href="${p[2]}" ${p[2].startsWith('mailto:') ? '' : 'target="_blank" rel="noreferrer"'}><span class="link-number">${String(i+1).padStart(2,'0')}</span><span class="link-mark" aria-hidden="true">${p[3]}</span><span class="link-copy"><strong>${p[0]}</strong><small>${p[1]}</small></span><span class="arrow" aria-hidden="true">↗</span></a>`).join('');
-    document.querySelector('#year').textContent = new Date().getFullYear();
+
+    document.querySelector('#links').innerHTML = profiles
+      .map((profile, index) => {
+        const [name, username, url, initials] = profile;
+        const externalAttributes = url.startsWith('mailto:')
+          ? ''
+          : 'target="_blank" rel="noreferrer"';
+
+        return `
+          <a
+            class="profile-link"
+            href="${url}"
+            ${externalAttributes}
+          >
+            <span class="link-number">
+              ${String(index + 1).padStart(2, '0')}
+            </span>
+
+            <span class="link-mark" aria-hidden="true">
+              ${initials}
+            </span>
+
+            <span class="link-copy">
+              <strong>${name}</strong>
+              <small>${username}</small>
+            </span>
+
+            <span class="arrow" aria-hidden="true">↗</span>
+          </a>
+        `;
+      })
+      .join('');
+
+    document.querySelector('#year').textContent =
+      new Date().getFullYear();
   </script>
 </body>
 </html>
